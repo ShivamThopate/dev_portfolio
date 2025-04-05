@@ -9,65 +9,93 @@
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="logo">Kethan</div>
-    <ul>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="logo">Kethan Dosapati</div>
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">Get in Touch</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
 
-  <section class="hero">
-    <h1 class="fade-in">Kethan Dosapati</h1>
-    <p class="fade-in delay1">AI Engineer | ML Developer | Builder of Smart Systems</p>
-  </section>
+<!-- Hero Section -->
+<section class="hero">
+  <img src="assets/profile.png" alt="Kethan Dosapati" class="avatar">
+  <h1>Kethan <span class="last-name">Dosapati</span></h1>
+  <p class="subtitle">AI Engineer | ML Developer | Builder of Smart Systems</p>
+  <a href="#contact" class="btn-primary">Contact Me</a>
+</section>
 
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>I’m an AI Engineer with a passion for generative models, smart agents, and building intelligent solutions that make a difference. Currently pursuing an MS in Data Science at Pace University.</p>
-  </section>
+<!-- About Section -->
+<section id="about" class="content-section">
+  <h2>About Me</h2>
+  <p>I’m an AI Engineer passionate about building smart, scalable systems using machine learning, generative AI, and NLP. I'm currently pursuing my MS in Data Science at Pace University.</p>
+</section>
 
-  <section id="projects" class="fade-in">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>TeachMate</h3>
-        <p>Smart document AI with handwriting recognition, grading, quizzes, and chat interface.</p>
-      </div>
-      <div class="project-card">
-        <h3>AI Trainer</h3>
-        <p>Real-time feedback for workout form using video analysis — 85% accuracy.</p>
-      </div>
-      <div class="project-card">
-        <h3>Film Agent @ D Studios</h3>
-        <p>Built bots to convert movie + OTT data into voiceover videos with subtitles.</p>
-      </div>
+<!-- Projects Section -->
+<section id="projects" class="content-section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>TeachMate</h3>
+      <p>Smart document AI with handwriting recognition, grading, quizzes, and chat interface.</p>
     </div>
-  </section>
+    <div class="project-card">
+      <h3>AI Trainer</h3>
+      <p>Real-time feedback for workout form using video analysis — 85% accuracy.</p>
+    </div>
+    <div class="project-card">
+      <h3>Film Agent @ D Studios</h3>
+      <p>Built bots to convert movie + OTT data into voiceover videos with subtitles.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="experience" class="fade-in">
-    <h2>Experience</h2>
-    <p><strong>Datalabs Corporation – Data Engineer Associate (2024)</strong><br>
-    Built a GenAI news agent, enterprise-grade bot framework, and more.</p>
+<!-- Experience Section -->
+<section id="experience" class="content-section">
+  <h2>Experience</h2>
+  <div class="experience-grid">
+    <div class="experience-card">
+      <h3>Datalabs Corporation</h3>
+      <p><strong>Role:</strong> Data Engineer Associate – AI</p>
+      <ul>
+        <li>Built GenAI news bot with 29s response time.</li>
+        <li>Created enterprise-level Excel → chatbot framework.</li>
+      </ul>
+    </div>
 
-    <p><strong>Skil.AI – ML Intern (2024)</strong><br>
-    Built address verifier, issue diagnosis AI, smart note resolver, and chatbot tools.</p>
-  </section>
+    <div class="experience-card">
+      <h3>Skil.AI</h3>
+      <p><strong>Role:</strong> Machine Learning Intern</p>
+      <ul>
+        <li>Built 100% accurate address verification AI.</li>
+        <li>Developed diagnostic agents for issue categorization (+50% speed).</li>
+        <li>Helped build chatbot tools and document Q&A features.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <p>📧 <a href="mailto:kethandosapati@gmail.com">kethandosapati@gmail.com</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/kethan-dosapati-5a26a72a1/">LinkedIn</a> | 
-            <a href="https://github.com/DKethan">GitHub</a> | 
-            <a href="https://huggingface.co/DKethan">Hugging Face</a></p>
-  </section>
+<!-- Contact Section -->
+<section id="contact" class="content-section contact-section">
+  <h2>Get in Touch</h2>
+  <form action="mailto:kethandosapati@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Email</button>
+  </form>
+</section>
 
-  <footer>
-    <p>© 2025 Kethan Dosapati. All rights reserved.</p>
-  </footer>
+<!-- Footer -->
+<footer>
+  <p>© 2025 Kethan Dosapati. Built with ❤️</p>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

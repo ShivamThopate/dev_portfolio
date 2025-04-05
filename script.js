@@ -1,7 +1,7 @@
-// Simple scroll animation
+// Optional: scroll-triggered fade animation
 const faders = document.querySelectorAll('.fade-in');
 
-const appearOnScroll = new IntersectionObserver(function (entries) {
+const appearOnScroll = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('appear');
