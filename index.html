@@ -4,139 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kethan Dosapati | AI Engineer</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #222;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8em;
-    }
-    header p {
-      font-size: 1.2em;
-      margin: 10px 0 0;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-      color: #222;
-    }
-    .card {
-      margin-bottom: 30px;
-    }
-    .card h3 {
-      margin: 0 0 10px;
-      color: #444;
-    }
-    .card p {
-      margin: 0 0 10px;
-      line-height: 1.6;
-    }
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .socials a {
-      margin-right: 15px;
-    }
-  </style>
 </head>
 <body>
 
-<header>
-  <h1>Kethan Dosapati</h1>
-  <p>AI Engineer | ML Developer | GenAI Enthusiast</p>
-  <p>📍 Plainsboro, NJ | <a href="mailto:Kethandosapati@gmail.com">Kethandosapati@gmail.com</a></p>
-</header>
+  <nav class="navbar">
+    <div class="logo">Kethan</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<section>
-  <h2>About Me</h2>
-  <p>I’m a passionate AI Engineer currently pursuing my MS in Data Science at Pace University. I build smart systems—from generative AI agents to intelligent grading platforms—and I love turning complex problems into elegant AI-powered solutions.</p>
-</section>
+  <section class="hero">
+    <h1 class="fade-in">Kethan Dosapati</h1>
+    <p class="fade-in delay1">AI Engineer | ML Developer | Builder of Smart Systems</p>
+  </section>
 
-<section>
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>Data Engineer Associate – Datalabs Corporation (2024)</h3>
-    <p>• Built a Generative AI agent for fast news summarization (29s response time).<br>
-       • Created an enterprise tool that generates conversational bots from uploaded files.</p>
-  </div>
-  <div class="card">
-    <h3>ML Intern – Skil.AI (2024)</h3>
-    <p>• Created address verification model (100% accuracy).<br>
-       • AI assistant for issue diagnosis & resolution (+50% efficiency).<br>
-       • Developed note lookup agent and contributed to a no-code AI chatbot platform.</p>
-  </div>
-</section>
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>I’m an AI Engineer with a passion for generative models, smart agents, and building intelligent solutions that make a difference. Currently pursuing an MS in Data Science at Pace University.</p>
+  </section>
 
-<section>
-  <h2>Projects</h2>
-  <div class="card">
-    <h3>TeachMate (2023–2024)</h3>
-    <p>AI-powered platform for document parsing, handwriting recognition, grading, and quizzes.</p>
-  </div>
-  <div class="card">
-    <h3>AI Trainer (2022)</h3>
-    <p>Real-time workout form analyzer with 85% accuracy using video analysis and feedback loops.</p>
-  </div>
-  <div class="card">
-    <h3>D Studios (Founder)</h3>
-    <p>• Created a movie info-to-video voiceover agent for OTT platforms.<br>
-       • Led video production on Instagram/YouTube and built web crawlers for film content curation.</p>
-  </div>
-</section>
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>TeachMate</h3>
+        <p>Smart document AI with handwriting recognition, grading, quizzes, and chat interface.</p>
+      </div>
+      <div class="project-card">
+        <h3>AI Trainer</h3>
+        <p>Real-time feedback for workout form using video analysis — 85% accuracy.</p>
+      </div>
+      <div class="project-card">
+        <h3>Film Agent @ D Studios</h3>
+        <p>Built bots to convert movie + OTT data into voiceover videos with subtitles.</p>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Skills</h2>
-  <p><strong>Languages:</strong> Python, Java</p>
-  <p><strong>Libraries:</strong> TensorFlow, PyTorch, Scikit-learn, Transformers, Pandas</p>
-  <p><strong>Tools:</strong> Streamlit, Gradio, SQL</p>
-</section>
+  <section id="experience" class="fade-in">
+    <h2>Experience</h2>
+    <p><strong>Datalabs Corporation – Data Engineer Associate (2024)</strong><br>
+    Built a GenAI news agent, enterprise-grade bot framework, and more.</p>
 
-<section>
-  <h2>Education</h2>
-  <p><strong>Pace University (2026)</strong> – MS in Data Science</p>
-  <p><strong>REVA University (2024)</strong> – B.Tech in AI & ML (GPA: 8.78)</p>
-</section>
+    <p><strong>Skil.AI – ML Intern (2024)</strong><br>
+    Built address verifier, issue diagnosis AI, smart note resolver, and chatbot tools.</p>
+  </section>
 
-<section>
-  <h2>Contact & Links</h2>
-  <div class="socials">
-    <p><a href="https://www.linkedin.com/in/kethan-dosapati-5a26a72a1/">LinkedIn</a></p>
-    <p><a href="https://github.com/DKethan">GitHub</a></p>
-    <p><a href="https://huggingface.co/DKethan">Hugging Face</a></p>
-    <p><a href="https://linktr.ee/kethandosapati">Linktree</a></p>
-  </div>
-</section>
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>📧 <a href="mailto:kethandosapati@gmail.com">kethandosapati@gmail.com</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/kethan-dosapati-5a26a72a1/">LinkedIn</a> | 
+            <a href="https://github.com/DKethan">GitHub</a> | 
+            <a href="https://huggingface.co/DKethan">Hugging Face</a></p>
+  </section>
 
-<footer>
-  <p>© 2025 Kethan Dosapati. All rights reserved.</p>
-</footer>
+  <footer>
+    <p>© 2025 Kethan Dosapati. All rights reserved.</p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
