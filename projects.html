@@ -30,18 +30,28 @@
 <!-- Projects Section -->
 <section class="section projects">
   <div class="container">
-    <h2 class="section-title">My Projects</h2>
-
-    <div class="projects-grid">
+    <h2 class="section-title">MY PROJECTS</h2>
+    
+    <!-- Project Navigation Tabs -->
+    <div class="project-tabs">
+      <button class="tab-button active" data-tab="github">GITHUB PROJECTS</button>
+      <button class="tab-button" data-tab="huggingface">HUGGING FACE MODELS</button>
+      <button class="tab-button" data-tab="pypi">PYPI PACKAGES</button>
+    </div>
+    
+    <!-- GitHub Projects -->
+    <div class="tab-content active" id="github-content">
+      <h3 class="subsection-title">GitHub Repositories</h3>
+      <div class="projects-grid">
       <!-- Project 1 -->
       <div class="project-card fade-in">
         <div class="project-content">
-          <h3>TeachMate</h3>
-          <p class="project-tech">Python • TensorFlow • NLP • Computer Vision • OpenAI • Google Vision • Pinecone • Streamlit • llama-index • fastapi</p>
-          <p>Smart document AI with handwriting recognition, automated grading, quiz generation, and interactive chat interface for educational content.</p>
+          <h3>Wrapper4AI</h3>
+          <p class="project-tech">Python • API Integration • LLM • OpenAI • Google Gemini • Anthropic</p>
+          <p>A clean, lightweight Python wrapper providing a unified interface to multiple LLM providers including OpenAI, Gemini, and others.</p>
           <div class="project-links">
-<!--            <a href="#" class="btn btn-outline">View Details</a>-->
-<!--            <a href="#" class="btn btn-primary">Live Demo</a>-->
+            <a href="https://github.com/DKethan/Wrapper4AI" class="btn btn-outline" target="_blank">GITHUB REPO</a>
+            <a href="https://pypi.org/project/wrapper4ai/" class="btn btn-primary" target="_blank">PYPI PAGE</a>
           </div>
         </div>
       </div>
@@ -53,22 +63,153 @@
           <p class="project-tech">Python • OpenCV • MediaPipe • fastapi</p>
           <p>Real-time feedback system for workout form using video analysis with 85% accuracy in detecting incorrect postures and suggesting corrections.</p>
           <div class="project-links">
-<!--            <a href="#" class="btn btn-outline">View Details</a>-->
-<!--            <a href="#" class="btn btn-primary">Live Demo</a>-->
+            <a href="https://github.com/DKethan/AI-Trainer" class="btn btn-outline" target="_blank">GITHUB REPO</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Project 3 -->
+      <div class="project-card fade-in">
+        <div class="project-content">
+          <h3>Gradio QA Model</h3>
+          <p class="project-tech">Python • Transformers • Gradio • NLP • Question Answering</p>
+          <p>Question and Answer model implemented using Hugging Face Transformers with an interactive Gradio interface for easy use.</p>
+          <div class="project-links">
+            <a href="https://github.com/DKethan/Gradio-QA-model" class="btn btn-outline" target="_blank">GITHUB REPO</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 4 -->
+      <div class="project-card fade-in">
+        <div class="project-content">
+          <h3>simple-ai-ui</h3>
+          <p class="project-tech">JavaScript • CSS • UI/UX • Frontend • AI Integration</p>
+          <p>A straightforward user interface for AI applications, emphasizing simplicity and usability with clean modern design.</p>
+          <div class="project-links">
+            <a href="https://github.com/DKethan/simple-ai-ui" class="btn btn-outline" target="_blank">GITHUB REPO</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 5 -->
+      <div class="project-card fade-in">
+        <div class="project-content">
+          <h3>IPL Score Stream</h3>
+          <p class="project-tech">Python • API Integration • Real-time Data • Web Scraping</p>
+          <p>A project focused on streaming and displaying live IPL scores, integrating APIs and real-time data processing.</p>
+          <div class="project-links">
+            <a href="https://github.com/DKethan/ipl_score_stream" class="btn btn-outline" target="_blank">GITHUB REPO</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <!-- Hugging Face Projects -->
+    <div class="tab-content" id="huggingface-content">
+      <h3 class="subsection-title">Hugging Face Models & Spaces</h3>
+      <div class="projects-grid">
+      <!-- HF Project 1 -->
+      <div class="project-card fade-in">
+        <div class="project-content">
+          <h3>IPL Score Stream</h3>
+          <p class="project-tech">Python • Gradio • Real-time Data • Web Scraping</p>
+          <p>A real-time application displaying live IPL scores and news updates with a clean interactive interface.</p>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/DKethan/IPL_Score_Stream" class="btn btn-primary" target="_blank">VIEW SPACE</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- HF Project 2 -->
+      <div class="project-card fade-in">
+        <div class="project-content">
+          <h3>Duel Simulation</h3>
+          <p class="project-tech">Python • LLM • Gradio • Conversation AI</p>
+          <p>An interactive chatbot simulating interview scenarios for practice, helping users prepare for job interviews.</p>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/DKethan/Duel-Simulation" class="btn btn-primary" target="_blank">VIEW SPACE</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- HF Project 3 -->
+      <div class="project-card fade-in">
+        <div class="project-content">
+          <h3>AI Critic</h3>
+          <p class="project-tech">Python • News API • LLM • Content Analysis</p>
+          <p>An AI tool that fetches and rates news articles on various topics, providing insightful analysis and summaries.</p>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/DKethan/AI-Critic" class="btn btn-primary" target="_blank">VIEW SPACE</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- HF Project 4 -->
+      <div class="project-card fade-in">
+        <div class="project-content">
+          <h3>Sage</h3>
+          <p class="project-tech">Python • LLM • Personal Assistant • Gradio</p>
+          <p>A personal assistant designed to help with daily tasks and queries, providing helpful responses to user questions.</p>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/DKethan/Sage" class="btn btn-primary" target="_blank">VIEW SPACE</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- HF Project 5 -->
+      <div class="project-card fade-in">
+        <div class="project-content">
+          <h3>Bodhidharma</h3>
+          <p class="project-tech">Python • LLM • Philosophy • Wisdom</p>
+          <p>An AI assistant inspired by philosophical teachings to provide guidance and wisdom for life's difficult questions.</p>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/DKethan/Bodhidharma" class="btn btn-primary" target="_blank">VIEW SPACE</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- HF Project 6 -->
+      <div class="project-card fade-in">
+        <div class="project-content">
+          <h3>Text Generation</h3>
+          <p class="project-tech">Python • NLP • Transformers • Language Model</p>
+          <p>A model focused on generating coherent and contextually relevant text for various applications and use cases.</p>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/DKethan/Text-Generation" class="btn btn-primary" target="_blank">VIEW SPACE</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <!-- Python Packages -->
+    <div class="tab-content" id="pypi-content">
+      <h3 class="subsection-title">Published Python Packages</h3>
+      <div class="projects-grid">
+      <!-- Package 1 -->
+      <div class="project-card fade-in">
+        <div class="project-content">
+          <h3>Wrapper4AI</h3>
+          <p class="project-tech">Python • API Integration • Package Development</p>
+          <p>A lightweight, multi-provider Python wrapper for OpenAI, Gemini, and other LLM APIs with a unified interface.</p>
+          <div class="project-links">
+            <a href="https://pypi.org/project/wrapper4ai/" class="btn btn-primary" target="_blank">VIEW ON PYPI</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 3 -->
+      <!-- Package 2 -->
       <div class="project-card fade-in">
         <div class="project-content">
-          <h3>Film Agent @ D Studios</h3>
-          <p class="project-tech">Python • FFmpeg • OpenAI</p>
-          <p>Automated system that converts movie and OTT platform data into engaging voiceover videos with accurate subtitles and visual effects.</p>
+          <h3>UI4AI</h3>
+          <p class="project-tech">Python • Streamlit • Frontend • UI/UX</p>
+          <p>Plug-and-play Streamlit UI components designed specifically for building LLM-powered chatbot interfaces.</p>
           <div class="project-links">
-<!--            <a href="#" class="btn btn-outline">View Details</a>-->
-<!--            <a href="#" class="btn btn-primary">Live Demo</a>-->
+            <a href="https://pypi.org/project/ui4ai/" class="btn btn-primary" target="_blank">VIEW ON PYPI</a>
           </div>
+        </div>
         </div>
       </div>
     </div>
