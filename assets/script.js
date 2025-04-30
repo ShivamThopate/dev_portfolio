@@ -15,6 +15,51 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
+// Project tabs functionality
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabContents = document.querySelectorAll('.tab-content');
+
+if (tabButtons.length > 0) {
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons and contents
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+      
+      // Add active class to clicked button
+      button.classList.add('active');
+      
+      // Show corresponding content
+      const tabId = button.getAttribute('data-tab');
+      document.getElementById(`${tabId}-content`).classList.add('active');
+    });
+  });
+}
+
+// Clipboard functionality for package installation commands
+const copyButtons = document.querySelectorAll('.copy-btn');
+if (copyButtons.length > 0) {
+  copyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const textToCopy = button.getAttribute('data-clipboard-text');
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        // Show copied feedback
+        const originalHTML = button.innerHTML;
+        button.innerHTML = '<i class="fas fa-check"></i>';
+        button.style.color = 'var(--success)';
+        
+        // Reset after 2 seconds
+        setTimeout(() => {
+          button.innerHTML = originalHTML;
+          button.style.color = '';
+        }, 2000);
+      });
+    });
+  });
+}
+
+// Navbar scroll effect
+
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navbar');
