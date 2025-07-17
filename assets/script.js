@@ -1,19 +1,5 @@
-// Mobile menu toggle
-const menuToggle = document.getElementById('mobile-menu');
-const navLinks = document.querySelector('.nav-links');
-
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  menuToggle.classList.toggle('active');
-});
-
-// Close mobile menu when clicking a link
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-    menuToggle.classList.remove('active');
-  });
-});
+// Mobile menu toggle (handled by component loader)
+// This functionality is now managed by assets/components.js
 
 // Project tabs functionality
 const tabButtons = document.querySelectorAll('.tab-button');
@@ -58,17 +44,8 @@ if (copyButtons.length > 0) {
   });
 }
 
-// Navbar scroll effect
-
-// Navbar scroll effect
-window.addEventListener('scroll', () => {
-  const navbar = document.querySelector('.navbar');
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
+// Navbar scroll effect (handled by component loader)
+// This functionality is now managed by assets/components.js
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -94,32 +71,11 @@ const animateOnScroll = () => {
   });
 };
 
-// Scroll to top button functionality
-const scrollToTopButton = document.getElementById('scroll-to-top');
-if (scrollToTopButton) {
-  // Show/hide button based on scroll position
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      scrollToTopButton.classList.add('visible');
-    } else {
-      scrollToTopButton.classList.remove('visible');
-    }
-  });
+// Scroll to top button functionality (handled by component loader)
+// This functionality is now managed by assets/components.js
 
-  // Scroll to top when button is clicked
-  scrollToTopButton.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-}
-
-// Update copyright year in footer
-const copyrightYearElement = document.getElementById('copyright-year');
-if (copyrightYearElement) {
-  copyrightYearElement.textContent = new Date().getFullYear();
-}
+// Update copyright year in footer (handled by component loader)
+// This functionality is now managed by assets/components.js
 
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
