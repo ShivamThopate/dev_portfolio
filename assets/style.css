@@ -904,6 +904,30 @@ section {
 
 }
 
+/* iPad and tablet specific styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 15px 0;
+  }
+  
+  .navbar.scrolled {
+    padding: 12px 0;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
