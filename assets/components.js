@@ -71,6 +71,11 @@ class ComponentLoader {
 
     // Set active navigation link based on current page
     this.setActiveNavLink();
+    
+    // Initialize theme toggle functionality
+    if (typeof initThemeToggle === 'function') {
+      initThemeToggle();
+    }
   }
 
   // Initialize footer-specific scripts

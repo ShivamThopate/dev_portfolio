@@ -1,7 +1,9 @@
 <!-- Navigation -->
-<nav class="navbar">
+<nav class="navbar glassmorphism">
   <div class="container">
-    <a href="index.html" class="logo">KD</a>
+    <a href="index.html" class="logo">
+      <span class="logo-text">KD</span>
+    </a>
     <div class="menu-toggle" id="mobile-menu"><span></span><span></span><span></span></div>
     <ul class="nav-links">
       <li><a href="index.html" id="nav-home">Home</a></li>
@@ -9,6 +11,12 @@
       <li><a href="projects.html" id="nav-projects">Projects</a></li>
       <li><a href="tech-stack.html" id="nav-tech-stack">Tech Stack</a></li>
       <li><a href="contact.html" id="nav-contact">Contact</a></li>
+      <li class="theme-toggle-wrapper">
+        <button id="theme-toggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon dark-icon"></i>
+          <i class="fas fa-sun light-icon"></i>
+        </button>
+      </li>
     </ul>
   </div>
-</nav> 
+</nav>
