@@ -326,16 +326,37 @@ p {
     --heading-3: clamp(1.25rem, 5vw, 1.5rem);
   }
   
+  .hero {
+    padding: 80px 0 40px;
+    min-height: 85vh;
+  }
+  
   .hero-title {
     white-space: normal;
+    margin-bottom: var(--space-3);
   }
   
   .hero-positioning {
     font-size: var(--text-base);
+    margin-bottom: var(--space-3);
   }
   
   .hero-subtitle {
     font-size: var(--text-base);
+  }
+
+  .profile-img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-buttons {
+    gap: var(--space-2);
+  }
+
+  .btn {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-xs);
   }
 }
 
@@ -610,7 +631,7 @@ p {
 
 /* ===== Premium Hero Section ===== */
 .hero {
-  padding: 200px 0 120px;
+  padding: 120px 0 80px;
   background: radial-gradient(ellipse at center top, rgba(37, 99, 235, 0.15) 0%, transparent 50%), 
               linear-gradient(135deg, var(--dark) 0%, #111827 50%, var(--dark) 100%);
   position: relative;
@@ -1040,12 +1061,41 @@ p {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+    min-height: 90vh;
+  }
+
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-6);
+  }
+
+  .hero-content {
+    max-width: 100%;
+    order: 2;
+  }
+
+  .hero-image {
+    margin-left: 0;
+    order: 1;
+  }
+
+  .profile-img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .project-tabs {
     flex-direction: column;
     align-items: center;
   }
-
-
 
   .demo-container {
     grid-template-columns: 1fr;
