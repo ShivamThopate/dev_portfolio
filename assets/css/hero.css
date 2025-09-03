@@ -23,15 +23,19 @@
 }
 
 .hero-title {
-  font-family: var(--font-heading), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
   font-size: var(--heading-1);
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: var(--space-4);
   line-height: var(--leading-tight);
-  letter-spacing: -0.02em;
-  text-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+  letter-spacing: 0.02em;
+  color: #ffffff;
   white-space: nowrap;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
+
+
 
 .hero-title span {
   color: var(--primary);
@@ -52,11 +56,12 @@
   font-family: var(--font-ui), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: var(--text-xl);
   color: var(--text-secondary);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-5);
   line-height: var(--leading-relaxed);
   font-weight: 500;
   letter-spacing: 0.01em;
   max-width: 68ch;
+  opacity: 0.9;
 }
 
 .hero-badges {
@@ -149,6 +154,7 @@
   z-index: -1;
   border-radius: 20px;
   animation: floatShape 6s ease-in-out infinite;
+  will-change: transform;
 }
 
 .shape-1 {
@@ -158,6 +164,7 @@
   left: 5%;
   transform: rotate(45deg);
   animation-delay: 0s;
+  filter: blur(0.5px);
 }
 
 .shape-2 {
@@ -167,7 +174,10 @@
   right: 10%;
   border-radius: 50%;
   animation-delay: 2s;
+  filter: blur(0.3px);
 }
+
+
 
 @keyframes floatShape {
   0%, 100% { 
@@ -201,6 +211,14 @@
 
 .fade-in {
   animation: fadeInUp 0.8s ease-out forwards;
+}
+
+
+
+.hero-image:hover::before {
+  opacity: 0.4;
+  transform: translate(5px, 5px);
+  transition: all 0.3s var(--ease-professional);
 }
 
 /* Responsive Hero Styles */
@@ -436,6 +454,7 @@
     width: 250px;
     height: 250px;
   }
+
 }
 
 /* Desktop and large screens */
@@ -463,3 +482,4 @@
     min-height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   }
 }
+
