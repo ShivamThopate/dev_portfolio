@@ -96,6 +96,8 @@
 .hero-buttons {
   display: flex;
   gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .hero-image {

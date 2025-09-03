@@ -1,6 +1,8 @@
 /* ===== Button Styles ===== */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: var(--space-2) var(--space-4);
   border-radius: 12px;
   font-family: var(--font-ui), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -19,6 +21,7 @@
   touch-action: manipulation;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  min-height: 48px;
 }
 
 .btn-primary {
