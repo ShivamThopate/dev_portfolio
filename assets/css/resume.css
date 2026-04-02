@@ -1,6 +1,6 @@
 /* ===== Resume Section ===== */
 .resume {
-  background: var(--bg-primary);
+  background: transparent;
   padding: var(--space-12) 0;
 }
 

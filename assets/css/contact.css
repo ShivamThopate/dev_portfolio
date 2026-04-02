@@ -9,10 +9,10 @@
 /* Unified Card Style */
 .contact-info-box,
 .contact-form-box {
-  background-color: #1e2636;
+  background-color: rgba(15, 15, 30, 0.7);
   padding: 2rem;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: none;
   box-shadow: 0 0 0 transparent;
   transition: all 0.3s ease;
 }
@@ -69,7 +69,7 @@
 
 .contact-socials a {
   color: #fff;
-  background: #2c3446;
+  background: rgba(255, 255, 255, 0.08);
   padding: 10px;
   border-radius: 50%;
   margin-right: 10px;
@@ -78,7 +78,7 @@
 }
 
 .contact-socials a:hover {
-  background: #2962ff;
+  background: rgba(255, 255, 255, 0.15);
   color: #fff;
 }
 
@@ -90,7 +90,7 @@
   margin-bottom: 1rem;
   border: none;
   border-radius: 10px;
-  background-color: #2a3244;
+  background-color: rgba(255, 255, 255, 0.06);
   color: #fff;
   font-size: 0.95rem;
 }
@@ -103,7 +103,7 @@
 /* Submit Button */
 .contact-form .btn {
   width: 100%;
-  background-color: #2962ff;
+  background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
   border: none;
   padding: 0.9rem 1.2rem;
@@ -115,7 +115,7 @@
 }
 
 .contact-form .btn:hover {
-  background-color: #1f4cd2;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Calendly inline embed (shown second) */
@@ -125,8 +125,8 @@
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
-  background-color: #1e2636;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(15, 15, 30, 0.7);
+  border: none;
   padding: 1.5rem;
 }
 
