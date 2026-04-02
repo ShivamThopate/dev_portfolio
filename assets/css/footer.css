@@ -1,13 +1,13 @@
-/* ===== Footer 2025 - Glassmorphism & Neumorphism Design ===== */
+/* ===== Footer 2025 - Premium Gold & Navy Design ===== */
 .footer-2025-x {
-  --footer-bg: rgb(30, 41, 59);
-  --card-bg: rgba(30, 41, 59, 0.7);
-  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  --card-highlight: rgba(255, 255, 255, 0.05);
-  --accent-gradient: linear-gradient(90deg, #1e40af, #7e22ce, #0ea5e9);
-  --glow-color: rgba(30, 64, 175, 0.4);
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
+  --footer-bg: transparent;
+  --card-bg: rgba(26, 26, 46, 0.7);
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --card-highlight: rgba(255, 255, 255, 0.03);
+  --accent-gradient: linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255,0.8), rgba(255,255,255,0.5));
+  --glow-color: rgba(255, 255, 255, 0.1);
+  --text-primary: #f5f3ff;
+  --text-secondary: #a5a3b8;
   --border-radius: 16px;
   --transition-speed: 0.3s;
 
@@ -15,20 +15,43 @@
   margin-top: 0 !important;
   padding: 0 !important;
   width: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 20% 80%, rgba(99, 102, 241, 0.04) 0%, transparent 40%),
+    radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.03) 0%, transparent 40%),
+    linear-gradient(180deg, #030308 0%, #080816 50%, #0f0f1e 100%);
   color: var(--text-primary);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
   font-size: 0.95rem;    /* Add or decrease as needed */
   margin-bottom: 0 !important;
 }
 
-/* Frosted glass panel effect */
+/* Footer starfield — same classes reused from hero.css */
+.footer-2025-x .footer-starfield {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.footer-2025-x .footer-glow {
+  bottom: -10%;
+  right: -8%;
+  top: auto;
+  left: auto;
+}
+
+/* Glass panel is now transparent so starfield shows through */
 .footer-2025-x .footer-glass {
-  backdrop-filter: blur(6px); /* Frosted glass effect */
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   background: var(--footer-bg);
   position: relative;
   overflow: hidden;
   padding: 20px 0 0 0 !important;
+  z-index: 1;
 }
 
 /* Subtle grain overlay */
@@ -140,7 +163,7 @@
 
 .footer-2025-x .quick-links a:hover,
 .footer-2025-x .quick-links a:focus-visible {
-  color: var(--text-primary);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-2025-x .quick-links a:hover::before,
@@ -162,7 +185,7 @@
 }
 
 .footer-2025-x .tech-badge {
-  background-color: rgba(15, 23, 42, 0.6);
+  background-color: rgba(15, 15, 30, 0.6);
   border-radius: 10px;
   width: 40px;
   height: 40px;
@@ -205,7 +228,8 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba(15, 23, 42, 0.6);
+  background-color: rgba(15, 15, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,8 +238,10 @@
 }
 
 .footer-2025-x .social-links a:hover {
-  color: var(--text-primary);
+  color: rgba(255, 255, 255, 0.8);
   transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.08);
 }
 
 /* Footer Bottom */
@@ -243,13 +269,12 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: var(--accent-gradient);
-  background-size: 200% auto;
-  color: white;
-  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,9 +283,9 @@
   visibility: hidden;
   transition: all var(--transition-speed);
   z-index: 100;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  box-shadow: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .footer-2025-x .scroll-to-top.visible {
@@ -269,8 +294,9 @@
 }
 
 .footer-2025-x .scroll-to-top:hover {
-  transform: scale(1.1);
-  background-position: right center;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 /* Animation for gradient shift */

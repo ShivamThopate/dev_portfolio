@@ -8,10 +8,10 @@
 
 /* Match project card design */
 .exp-card {
-  background-color: #1e2636;
+  background-color: rgba(15, 15, 30, 0.7);
   padding: 1.35rem 1.5rem;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: none;
   box-shadow: 0 0 0 transparent;
   transition: all 0.3s ease;
 }
