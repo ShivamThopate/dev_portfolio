@@ -279,17 +279,20 @@ body.stars-move-right .stars-large { animation: twinkle 5s ease-in-out infinite,
   }
 }
 
-/* Responsive Hero Styles */
-@media (max-width: 768px) {
+/* ===== Responsive Hero Styles ===== */
+/* max-width queries ordered from largest to smallest */
+
+@media (max-width: 992px) {
   .hero {
-    padding: 100px 0 60px;
-    min-height: 90vh;
+    padding: 120px 0 60px;
+    min-height: 100dvh;
   }
 
   .hero .container {
     flex-direction: column;
     text-align: center;
-    gap: var(--space-6);
+    justify-content: center;
+    gap: var(--space-5);
   }
 
   .hero-content {
@@ -302,41 +305,6 @@ body.stars-move-right .stars-large { animation: twinkle 5s ease-in-out infinite,
     order: 1;
   }
 
-  .profile-img {
-    width: 280px;
-    height: 280px;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .hero-badges {
-    justify-content: flex-start;
-  }
-
-  .badge {
-    font-size: var(--text-xs);
-    padding: 6px var(--space-2);
-  }
-}
-
-@media (max-width: 992px) {
-  .hero {
-    padding: 160px 0 100px;
-    min-height: 90vh;
-  }
-
-  .hero .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-content {
-    margin-bottom: 60px;
-  }
-
   .hero-buttons {
     justify-content: center;
     gap: 20px;
@@ -344,24 +312,63 @@ body.stars-move-right .stars-large { animation: twinkle 5s ease-in-out infinite,
 
   .hero-title {
     font-size: 3.2rem;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .hero-subtitle {
     font-size: 1.2rem;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 844px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .profile-img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
   .hero {
-    padding: 80px 0 40px;
-    min-height: 85vh;
+    padding: 100px 0 60px;
+  }
+
+  .hero .container {
+    gap: var(--space-4);
+  }
+
+  .hero-badges {
+    justify-content: center;
+  }
+
+  .badge {
+    font-size: var(--text-xs);
+    padding: 6px var(--space-2);
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 90px 0 50px;
   }
 
   .hero-title {
+    font-size: 2.2rem;
     white-space: normal;
-    margin-bottom: var(--space-3);
+    margin-bottom: 16px;
+    line-height: 1.1;
   }
 
   .hero-positioning {
@@ -370,50 +377,28 @@ body.stars-move-right .stars-large { animation: twinkle 5s ease-in-out infinite,
   }
 
   .hero-subtitle {
-    font-size: var(--text-base);
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
   }
 
   .profile-img {
-    width: 240px;
-    height: 240px;
-  }
-
-  .hero-buttons {
-    gap: var(--space-2);
-  }
-}
-
-@media (max-width: 576px) {
-  .hero {
-    padding: 120px 0 60px;
-    min-height: 100vh;
-  }
-
-  .hero-title {
-    font-size: 2.2rem;
-    margin-bottom: 18px;
-    line-height: 1.1;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-    margin-bottom: 25px;
-    line-height: 1.5;
+    width: 220px;
+    height: 220px;
   }
 
   .hero-buttons {
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     width: 100%;
-  }
-
-  .profile-img {
-    width: 240px;
-    height: 240px;
   }
 }
 
 @media (max-width: 414px) {
+  .hero {
+    padding: 80px 0 40px;
+  }
+
   .hero-title {
     font-size: 1.9rem;
   }
@@ -423,15 +408,17 @@ body.stars-move-right .stars-large { animation: twinkle 5s ease-in-out infinite,
   }
 
   .profile-img {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
   }
 }
 
-/* iPad and large tablets (768px - 1024px) */
+/* ===== Tablet & Desktop Overrides ===== */
+
+/* iPad and large tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero {
-    padding: 180px 0 100px;
+    padding: 160px 0 100px;
     min-height: 90vh;
   }
 
@@ -471,27 +458,10 @@ body.stars-move-right .stars-large { animation: twinkle 5s ease-in-out infinite,
   }
 }
 
-/* Modern smartphones (iPhone 12-16 Pro, etc.) */
-@media (max-width: 844px) {
-  .hero-title {
-    font-size: 2.6rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .profile-img {
-    width: 280px;
-    height: 280px;
-  }
-}
-
 /* Landscape orientation for phones */
 @media (max-width: 844px) and (orientation: landscape) {
   .hero {
     padding: 100px 0 60px;
-    min-height: 90vh;
   }
 
   .hero .container {
@@ -505,14 +475,13 @@ body.stars-move-right .stars-large { animation: twinkle 5s ease-in-out infinite,
   }
 
   .hero-content {
-    margin-bottom: 0;
+    order: 1;
   }
 
   .profile-img {
     width: 250px;
     height: 250px;
   }
-
 }
 
 /* Desktop and large screens */
