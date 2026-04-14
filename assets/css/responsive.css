@@ -25,9 +25,9 @@
     font-size: 1.4rem;
   }
 
-  /* Fix for 100vh issue on iOS Safari — dvh accounts for dynamic toolbar height */
+  /* Extend hero past the bottom browser bar / safe area so the next section never bleeds in */
   .hero {
-    min-height: 100dvh;
+    min-height: calc(100dvh + env(safe-area-inset-bottom, 34px));
   }
 
   /* Add padding for iPhone notch and safe areas */
